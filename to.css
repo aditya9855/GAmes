@@ -1,0 +1,81 @@
+*{ 
+    margin: 0;
+    padding: 0;
+    font-family:'Concert One', cursive;
+  }
+  
+  body{
+    background-color: rgb(67, 120, 243);
+    height: 100vh;
+  }
+  
+  header{
+    padding-top: 1.5rem;
+  }
+  
+  h1{
+   text-align: center;
+   font-size: 3rem;
+  }
+  
+  .players{
+    margin: 1.2rem 0 0 2rem;
+    font-size: 1.3rem;
+    display: flex;
+  }
+  
+  .player-input{
+    font-size: 1.3rem;
+    background-color: transparent;
+    border: none;
+  }
+  
+  #start{
+    margin: 1.2rem auto;
+    font-size: 1.8rem;
+    display: flex;
+    justify-content: center;
+    background-color: transparent;
+    border: none;
+    transition: 400ms;
+  }
+  
+  #start:hover{
+    color: rgb(249, 210, 34);
+  }
+  
+  h2{
+    margin: 2rem 0 0 2rem;
+  }
+  
+  
+  /* Tabuleiro */
+  
+  #board{
+    background-color: rgb(215, 215, 215);
+    display: grid;
+    grid-template-columns: 8rem 8rem 8rem;
+    grid-template-rows: 8rem 8rem 8rem;
+    gap: .5rem;
+    margin-bottom: 1.5rem;
+    max-width: 25rem;
+    margin: 2rem auto;
+  }
+  
+  #board span{
+    background-color:rgb(67, 120, 243);
+    cursor: pointer;
+    display: grid;
+    place-content: center;
+    font-size: 5rem;
+    font-family: sans-serif;
+    border: none;
+  }
+  
+  #board span.win{
+    background-color: #25a340;
+  }
+  
+  .cursor-pointer{
+    cursor: pointer;
+  }
