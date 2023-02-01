@@ -28,3 +28,9 @@ function disableAllRegions(regions) {
     })
 }
 
+function disableAllRegions(){
+    boardRegion.forEach(function (region){
+        region.classList.remove('cursor-pointer')
+        region.removeEventListener('click',handleBoardClick)
+    })
+}
